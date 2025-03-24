@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Développeur Web full stack</title>
+    <meta name="description" content="Portfolio de développeur web spécialisé dans la création d'expériences web élégantes, intuitives et fonctionnelles" />
+    <meta name="author" content="Jean Dupont" />
+
+    <meta property="og:title" content="Portfolio | Développeur Web Créatif" />
+    <meta property="og:description" content="Portfolio de développeur web spécialisé dans la création d'expériences web élégantes, intuitives et fonctionnelles" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Chargement...</div>
+      </div>
+    </div>
+
+    <!-- Background -->
+    <canvas id="background-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="logo">Ismail jamai</a>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link">Accueil</a></li>
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li><a href="#projects" class="nav-link">Projets</a></li>
+          <li><a href="#skills" class="nav-link">Compétences</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-container">
+        <h1 class="reveal-left">Ismail jamai</h1>
+        <h2 class="reveal">Développeur Web full stack</h2>
+        <p class="reveal-right">passionné par la création d'expériences web élégantes, intuitives et fonctionnelles</p>
+        <div class="hero-buttons reveal">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="section-container">
+        <h2 class="section-heading reveal">À propos de moi</h2>
+        <p class="section-subheading reveal">Découvrez mon parcours et ma passion pour le développement web</p>
+        
+        <div class="about-content">
+          <div class="about-image reveal-left">
+            <img src="OUA_2067.jpg" alt="Jean Dupont" class="avatar">
+          </div>
+          <div class="about-text reveal-right">
+            <h3>Qui suis-je?</h3>
+            <p>Étudiant en développement web full stack, passionné par la création de sites  web modernes. J’accorde une grande importance à l’accessibilité, au responsive design et à l’expérience utilisateur.  </p>
+            <h3>Mon expertise</h3>
+            <p>Je maîtrise les technologies front-end (HTML, CSS, JavaScript, React) et back-end (Node.js, PHP, Laravel). J’explore en profondeur les frameworks modernes et cherche à allier créativité, performance technique et expérience utilisateur optimisée dans chacun de mes projets.</p>
+            <a href="#contact" class="btn btn-primary">Me contacter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="section-container">
+        <h2 class="section-heading reveal">Mes projets</h2>
+        <p class="section-subheading reveal">Découvrez les projets sur lesquels j'ai travaillé récemment</p>
+        
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card stagger-item" style="--i:0">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80" alt="Projet E-commerce">
+            </div>
+            <div class="project-content">
+              <h3>Plateforme E-commerce</h3>
+              <p>Site e-commerce responsive avec paiement sécurisé et gestion des stocks en temps réel.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm">Voir le site</a>
+                <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 2 -->
+          <div class="project-card stagger-item" style="--i:1">
+            <div class="project-image">
+              <img src="logo_ calculs.png" alt="Application mobile">
+            </div>
+            <div class="project-content">
+              <h3> calculations</h3>
+              <p>Créez une calculatrice interactive avec HTML, CSS et JavaScript, incluant des animations et un design réactif.
+                 Implémentez les opérations de base (+, -, *, /) et la prise en charge des entrées clavier. 🚀</p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>HTML</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm">Voir le site</a>
+                <a href="https://github.com/ismail-jamai/calculations.git" class="btn btn-sm btn-outline" target="_blank">GitHub</a>
+            </div>
+            
+            </div>
+          </div>
+          
+          <!-- Project Card 3 -->
+          <div class="project-card stagger-item" style="--i:2">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Dashboard">
+            </div>
+            <div class="project-content">
+              <h3>Dashboard Analytique</h3>
+              <p>Interface d'administration avec visualisations de données et rapports personnalisables.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm">Voir le site</a>
+                <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="section-container">
+        <h2 class="section-heading reveal">Mes compétences</h2>
+        <p class="section-subheading reveal">Les technologies que j'utilise quotidiennement</p>
+        
+        <div class="skills-container">
+          <!-- Skill Category 1 -->
+          <div class="skill-category reveal-left">
+            <h3>Front-end</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                </div>
+                <span>HTML5</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                </div>
+                <span>CSS3</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Skill Category 2 -->
+          <div class="skill-category reveal">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                </div>
+                <span>React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+
+                </div>
+                <span>Laravel</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                </div>
+                <span>Vue.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <!-- Ajout de deux logos pour Tailwind CSS -->
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                  
+                </div>
+                <span>Tailwind CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!-- Skill Category 3 -->
+          <div class="skill-category reveal-right">
+            <h3>Back-end & Outils</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                </div>
+                <span>Node.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="Git">
+                </div>
+                <span>PHP</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                </div>
+                <span>Git</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                </div>
+                <span>Firebase</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="section-container">
+        <h2 class="section-heading reveal">Contact</h2>
+        <p class="section-subheading reveal">Intéressé par une collaboration? N'hésitez pas à me contacter!</p>
+        
+        <div class="contact-container">
+          <div class="contact-info reveal-left">
+            <h3>Coordonnées</h3>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <h4>Téléphone</h4>
+                <p>+212 6 41 85 04 76 </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>ismailjamaiwac2003@gmail.com </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4>Localisation</h4>
+                <p>safi, Maroc</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="#" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="contact-form reveal-right">
+            <h3>Envoyez-moi un message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Ismail jamai</h3>
+            <p>Développeur Web full stack</p>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#hero">Accueil</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#projects">Projets</a></li>
+              <li><a href="#skills">Compétences</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Suivez-moi</h4>
+            <div class="social-links">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ismail-jamai-336571337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <!-- GitHub -->
+              <a href="https://github.com/ismail-jamai" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/ton-profil" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ismail jamai. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
